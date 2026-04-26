@@ -1,0 +1,25 @@
+{
+  "name": "opencode-debrief",
+  "version": "0.1.0",
+  "description": "Socratic questioning mode for OpenCode",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["opencode", "plugin", "socratic", "debrief"],
+  "author": "",
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "dependencies": {
+    "@opencode-ai/plugin": "^1.14.24",
+    "typescript": "^6.0.3",
+    "zod": "^4.3.6"
+  }
+}
